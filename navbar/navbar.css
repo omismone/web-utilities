@@ -1,0 +1,65 @@
+html, body{
+    --c1: #116466;
+    --c2: #d9b08c;
+    --c3: #ffcb9a;
+    --c4: #303030;
+
+    background-color: var(--c1);
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn{
+    background-image: url("./assets/navbarbutton1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 8%;
+    aspect-ratio: 1 / 1;
+    min-height: 3%;
+    border: none;
+    background-color: transparent;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.desktop-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--c1);
+    width: 100%;
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: flex-end;
+    overflow: hidden;
+    column-gap: 10px;
+}
+.desktop-nav-itm{
+    text-align: center;
+    width: 20%;
+    height: auto;
+    background-color: var(--c3);
+}
+.desktop-nav-itm h2{
+    font-size: 1.5rem;
+    color: var(--c4);
+}
+
+.mobile-nav{
+    background-color: var(--c3);
+    overflow: hidden;
+}
+.mobile-nav-itm{
+    text-align: center;
+}
+.mobile-nav-itm h2{
+    font-size: 2.5rem;
+    color: var(--c4);
+}
+.closed {
+    max-height: 0;
+}
